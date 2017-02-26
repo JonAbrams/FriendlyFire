@@ -10,5 +10,6 @@ module.exports = {
     rules: [
       {test: /\.(js|jsx)$/, use: 'babel-loader'}
     ]
-  }
+  },
+  devtool: 'source-map'
 };
