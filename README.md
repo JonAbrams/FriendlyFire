@@ -88,12 +88,12 @@ Recommended that you put this into `componentDidMount` and pass in `this` as the
 
 Add `trigger` and will scan the components' methods looking potential subscribers, and use them.
 
-### <component>.trigger(_eventName_)
+### &lt;component>.trigger(_eventName_)
 
 Will fire any subscribers listening for the specified event from the triggering component.
 
-### <component>.onComponentNameEventname(data)
+### &lt;component>.onComponentNameEventname(data)
 
-To register a subscriber on a component, create a method on it using the above pattern.
+To register a subscriber on a component, create a method on it using the above pattern. The above example will fire when another component in the same app called `ComponentName` fires the event `eventname`.
 
 Note: The event specified needs to be all lowercase (with the exception of the first character).
